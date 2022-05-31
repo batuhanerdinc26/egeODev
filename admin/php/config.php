@@ -11,18 +11,11 @@ if($db === false){
 }
  
 
-if(@!$_SESSION["userID"]){
+if(@!$_SESSION["admin"]){
     $userID = '0';
 }else{
-    $userID = $_SESSION["userID"];
+    $admin = $_SESSION["admin"];
 }
-
-
-
-
-  
-
-
 
 
 

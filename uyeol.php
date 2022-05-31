@@ -14,8 +14,8 @@ require_once 'include/header.php';
 				<input type=”mail”  placeholder=”Email” name=””>
 			</td>
 		</tr>
-<tr>
-<td>
+	<tr>
+	<td>
 				Password:
 			</td>
 
