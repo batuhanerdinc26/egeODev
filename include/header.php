@@ -63,22 +63,22 @@ if(mysqli_num_rows($result) > 0)  {
 
         <li class="header-user">
             <?php 
-                if($userID==='0'){
+                if(!$_SESSION["user"] ){
                     ?>
-            <a href="#news">Giriş Yap</a>
+            <a href="uyeGirisi.php">Giriş Yap</a>
             <?php
                 }
             ?>
         </li>
         <li class="header-user">
             <?php 
-                if($userID==='0'){
+                if(!$_SESSION["user"] ){
                     ?>
             <a href="uyeol.php">Uye Ol</a>
             <?php
                 }else{
                     ?>
-            <a href="#news">Uye Name</a>
+            <a href="#news"><?= $_SESSION["user"] ?></a>
             <?php
                 }
             ?>
